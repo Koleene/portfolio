@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1037px) {
+    body {
+        overflow: scroll;
+    }
+    h1 {
+        font-size: 400%;
+    }
+    #menu_navigation {
+        width: 70%;
+    }
+    #menu_reseaux {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    h1 {
+        font-size: 300%;
+    }
+    h2 {
+        font-size: 130%;
+    }
+    #menu_navigation {
+        width: 80%;
+    }
+    #menu_reseaux {
+        width: 17%;
+    }
+    #section_portfolio p {
+        font-size: 280%;
+    }
+    .portfolio_miniature {
+        right: 0;
+        height: 48%;
+        width: auto;
+    }
+    @keyframes miniaturetransition {
+        from {
+            right: 15%;
+            opacity: 0.8;
+        }
+        to {
+            right: 0;
+            opacity: 1;
+        }
+    }
+    .portfolio_partie_gauche p {
+        display: none;
+    }
+    .portfolio_partie_gauche {
+        width: 100%;
+        margin-right: 0;
+    }
+    .portfolio_partie_droite {
+        width: 100%;
+    }
+    .portfolio_partie_droite a {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    #menu_navigation {
+        display: inline;
+    }
+    #menu_reseaux {
+        display: inline;
+    }
+    header {
+        margin-top: 20vh;
+    }
+    section {
+        margin-top: 20vh;
+        height: 80vh;
+    }
+    #section_apropos p {
+        width: 90%;
+    }
+    #section_apropos a {
+        padding: 3%;
+    }
+}

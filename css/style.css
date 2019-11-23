@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 600%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 200%;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 2%;
+}
+
+h3 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 200%;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 2%;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/**************************************
+Navigation
+**************************************/
+
+nav {
+    position: fixed;
+    width: 90%;
+    height: 15%;
+    top: 0;
+    z-index: 20;
+    list-style: none;
+}
+
+nav ul {
+    padding-top: 3%;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+
+/** Menu **/
+
+nav .menu_style {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    transition: 0.2s ease;
+}
+
+nav .menu_style:hover {
+    color: #00F38D;
+    transition: 0.2s ease;
+}
+
+#menu_navigation {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 55%;
+}
+
+
+/** Icones réseaux **/
+
+nav img {
+    width: 1.7em;
+    height: 1.7em;
+    vertical-align: middle;
+}
+
+.fond_icon {
+    width: 1.7em;
+    height: 1.7em;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.fond_icon:hover {
+    background-color: #00F38D;
+}
+
+#menu_reseaux {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 10%;
+    right: 0;
+}
+
+
+/** Transition de cache **/
+
+#cache_transition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 300;
+    background-color: #00F38D;
+    transition: height 0.3s ease-out;
+}
+
+@keyframes cacheTransitionEntree {
+    0% {
+        height: 0vh;
+    }
+    50% {
+        height: 100vh;
+    }
+    100% {
+        height: 0vh;
+    }
+}
+
+.transitionEntree {
+    height: 100vh;
+    transition: height 0.3s ease-out;
+}
+
+.transitionSortie {
+    height: 0vh;
+    transition: height 0.3s ease-out;
+}
+
+
+/**************************************
+Header / Accueil
+**************************************/
+
+#header {
+    display: block;
+}
+
+#highlight_vert {
+    color: #00F38D;
+}
+
+
+/**************************************
+Fullpage margin
+**************************************/
+
+header {
+    margin-top: 20vh;
+}
+
+section {
+    margin-top: 20vh;
+    height: 80vh;
+}
+
+
+/**************************************
+Section A propos
+**************************************/
+
+#section_apropos {
+    display: none;
+}
+
+#section_apropos p {
+    width: 50%;
+    margin-bottom: 6%;
+}
+
+#section_apropos a {
+    padding: 1%;
+    background-color: none;
+    border: solid 2px #000000;
+    justify-content: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    transition: 0.2s ease;
+}
+
+#section_apropos a:hover {
+    background-color: #00F38D;
+    border: solid 2px #00F38D;
+    transition: 0.2s ease;
+}
+
+
+/**************************************
+Section Portfolio
+**************************************/
+
+#section_portfolio {
+    display: none;
+}
+
+.section_portfolio_projets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio_partie_gauche {
+    width: 47%;
+    left: 0;
+    margin-right: 6%;
+}
+
+.portfolio_partie_gauche p {
+    margin-top: 3%;
+    text-align: right;
+}
+
+.img_presentation_portfolio {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.portfolio_partie_droite {
+    width: 47%;
+    right: 0;
+}
+
+.portfolio_partie_droite p:not(.not_margin) {
+    width: 75%;
+    margin-bottom: 10%;
+}
+
+.portfolio_partie_droite h3 {
+    margin-bottom: 4%;
+}
+
+.portfolio_partie_droite ul {
+    margin-bottom: 4%;
+}
+
+.portfolio_partie_droite li {
+    font-weight: 600;
+}
+
+.portfolio_partie_droite a {
+    padding: 2%;
+    background-color: none;
+    border: solid 2px #000000;
+    justify-content: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    transition: 0.2s ease;
+}
+
+.portfolio_partie_droite a:hover {
+    background-color: #00F38D;
+    border: solid 2px #00F38D;
+    transition: 0.2s ease;
+}
+
+#section_portfolio p {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 400%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#section_portfolio p:hover {
+    color: #FF0044;
+    transition: 0.2s ease;
+}
+
+.portfolio_miniature {
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    top: 20%;
+    overflow: hidden;
+    z-index: -1;
+    transition: width 0.2s ease;
+}
+
+.portfolio_miniature {
+    height: 70%;
+    width: auto;
+}
+
+
+/** Hover apparition miniature**/
+
+#miniature_jeudisoir,
+#miniature_femmegeante,
+#miniature_biennaleducirque,
+#miniature_micromondes,
+#miniature_tissou,
+#miniature_lane {
+    display: none;
+}
+
+#hover_jeudisoir:hover+#miniature_jeudisoir {
+    display: block;
+    animation: miniaturetransition 1s ease;
+}
+
+#hover_femmegeante:hover+#miniature_femmegeante {
+    display: block;
+    animation: miniaturetransition 1s ease;
+}
+
+#hover_biennaleducirque:hover+#miniature_biennaleducirque {
+    display: block;
+    animation: miniaturetransition 1s ease;
+}
+
+#hover_micromondes:hover+#miniature_micromondes {
+    display: block;
+    animation: miniaturetransition 1s ease;
+}
+
+#hover_tissou:hover+#miniature_tissou {
+    display: block;
+    animation: miniaturetransition 1s ease;
+}
+
+#hover_lane:hover+#miniature_lane {
+    display: block;
+    animation: miniaturetransition 1s ease;
+}
+
+@keyframes miniaturetransition {
+    from {
+        right: 20%;
+        opacity: 0.8;
+    }
+    to {
+        right: 5%;
+        opacity: 1;
+    }
+}
+
+
+/**************************************
+Section A propos
+**************************************/
+
+#section_contact {
+    display: none;
+}
+
+#section_contact a:hover {
+    text-decoration: underline;
+}
+
+
+/**************************************
+Section Projets Portfolio
+**************************************/
+
+#section_jeudisoir,
+#section_femmegeante,
+#section_biennaleducirque,
+#section_micromondes,
+#section_tissou,
+#section_lane {
+    display: none;
+}

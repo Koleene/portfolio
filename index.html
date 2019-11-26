@@ -101,7 +101,6 @@
     <section class="section_portfolio_projets" id="section_jeudisoir">
         <div class="portfolio_partie_gauche">
             <img class="img_presentation_portfolio" id="hover_jeudisoir_gif" src="images/portfolio/jeudisoir.jpg" alt="">
-            <p>Survolez l'image pour en voir plus !</p>
         </div>
         <div class="portfolio_partie_droite">
             <h3>Jeudi Soir</h3>
@@ -118,7 +117,6 @@
     <section class="section_portfolio_projets" id="section_femmegeante">
         <div class="portfolio_partie_gauche">
             <img class="img_presentation_portfolio" id="hover_femmegeante_gif" src="images/portfolio/femmegeante.jpg" alt="">
-            <p>Survolez l'image pour en voir plus !</p>
         </div>
         <div class="portfolio_partie_droite">
             <h3>Femme géante</h3>
@@ -135,7 +133,6 @@
     <section class="section_portfolio_projets" id="section_biennaleducirque">
         <div class="portfolio_partie_gauche">
             <img class="img_presentation_portfolio" id="hover_biennaleducirque_gif" src="images/portfolio/biennaleducirque.jpg" alt="">
-            <p>Survolez l'image pour en voir plus !</p>
         </div>
         <div class="portfolio_partie_droite">
             <h3>Biennale du cirque</h3>
@@ -152,7 +149,6 @@
     <section class="section_portfolio_projets" id="section_micromondes">
         <div class="portfolio_partie_gauche">
             <img class="img_presentation_portfolio" id="hover_micromondes_gif" src="images/portfolio/micromondes.jpg" alt="">
-            <p>Survolez l'image pour en voir plus !</p>
         </div>
         <div class="portfolio_partie_droite">
             <h3>Micro-Mondes</h3>
@@ -169,7 +165,6 @@
     <section class="section_portfolio_projets" id="section_tissou">
         <div class="portfolio_partie_gauche">
             <img class="img_presentation_portfolio" id="hover_tissou_gif" src="images/portfolio/tissou.jpg" alt="">
-            <p>Survolez l'image pour en voir plus !</p>
         </div>
         <div class="portfolio_partie_droite">
             <h3>Le Tissou</h3>
@@ -186,7 +181,6 @@
     <section class="section_portfolio_projets" id="section_lane">
         <div class="portfolio_partie_gauche">
             <img class="img_presentation_portfolio" id="hover_lane_gif" src="images/portfolio/lane.jpg" alt="">
-            <p>Survolez l'image pour en voir plus !</p>
         </div>
         <div class="portfolio_partie_droite">
             <h3>Lane</h3>
@@ -208,4 +202,27 @@
 
     <!--Javascript-->
     <script src="scripts/javascript.js "></script>
+    <script language="JavaScript">
+        function preloader() {
+            // Compteur
+            var i = 0;
+
+            // Créer l'objet
+            imageObj = new Image();
+
+            // Définir la liste d'images
+            images = new Array();
+            images[0] = "images/portfolio/jeudisoir.jpg"
+            images[1] = "images/portfolio/biennaleducirque.jpg"
+            images[2] = "images/portfolio/femmegeante.jpg"
+            images[3] = "images/portfolio/lane.jpg"
+            images[4] = "images/portfolio/micromondes.jpg"
+            images[5] = "images/portfolio/tissou.jpg"
+
+            // Démarrer le préchargement
+            for (i = 0; i <= 3; i++) {
+                imageObj.src = images[i];
+            }
+        }
+    </script>
 </body>

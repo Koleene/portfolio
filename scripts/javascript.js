@@ -106,14 +106,6 @@ function hoverPortfolioGif(idimage, urlimage) {
     document.getElementById(idimage).src = urlimage;
 }
 
-document.getElementById("hover_jeudisoir_gif").addEventListener("mouseover", function() {
-    hoverPortfolioGif("hover_jeudisoir_gif", "../images/portfolio/jeudisoir.gif");
-});
-
-document.getElementById("hover_jeudisoir_gif").addEventListener("mouseout", function() {
-    hoverPortfolioGif("hover_jeudisoir_gif", "../images/portfolio/jeudisoir.jpg");
-});
-
 function boutonFemmeGeante() {
     document.getElementById("header").style.display = "none";
     document.getElementById("section_apropos").style.display = "none";
@@ -131,14 +123,6 @@ document.getElementById("hover_femmegeante").addEventListener("click", function(
     transitionEntree();
     setTimeout(boutonFemmeGeante, 400);
     setTimeout(transitionSortie, 600);
-});
-
-document.getElementById("hover_femmegeante_gif").addEventListener("mouseover", function() {
-    hoverPortfolioGif("hover_femmegeante_gif", "../images/portfolio/femmegeante.gif");
-});
-
-document.getElementById("hover_femmegeante_gif").addEventListener("mouseout", function() {
-    hoverPortfolioGif("hover_femmegeante_gif", "../images/portfolio/femmegeante.jpg");
 });
 
 function boutonBiennale() {
@@ -160,14 +144,6 @@ document.getElementById("hover_biennaleducirque").addEventListener("click", func
     setTimeout(transitionSortie, 600);
 });
 
-document.getElementById("hover_biennaleducirque_gif").addEventListener("mouseover", function() {
-    hoverPortfolioGif("hover_biennaleducirque_gif", "../images/portfolio/biennaleducirque.gif");
-});
-
-document.getElementById("hover_biennaleducirque_gif").addEventListener("mouseout", function() {
-    hoverPortfolioGif("hover_biennaleducirque_gif", "../images/portfolio/biennaleducirque.jpg");
-});
-
 function boutonMicroMondes() {
     document.getElementById("header").style.display = "none";
     document.getElementById("section_apropos").style.display = "none";
@@ -185,14 +161,6 @@ document.getElementById("hover_micromondes").addEventListener("click", function(
     transitionEntree();
     setTimeout(boutonMicroMondes, 400);
     setTimeout(transitionSortie, 600);
-});
-
-document.getElementById("hover_micromondes_gif").addEventListener("mouseover", function() {
-    hoverPortfolioGif("hover_micromondes_gif", "../images/portfolio/micromondes.gif");
-});
-
-document.getElementById("hover_micromondes_gif").addEventListener("mouseout", function() {
-    hoverPortfolioGif("hover_micromondes_gif", "../images/portfolio/micromondes.jpg");
 });
 
 function boutonTissou() {
@@ -214,14 +182,6 @@ document.getElementById("hover_tissou").addEventListener("click", function() {
     setTimeout(transitionSortie, 600);
 });
 
-document.getElementById("hover_tissou_gif").addEventListener("mouseover", function() {
-    hoverPortfolioGif("hover_tissou_gif", "../images/portfolio/tissou.gif");
-});
-
-document.getElementById("hover_tissou_gif").addEventListener("mouseout", function() {
-    hoverPortfolioGif("hover_tissou_gif", "../images/portfolio/tissou.jpg");
-});
-
 function boutonLane() {
     document.getElementById("header").style.display = "none";
     document.getElementById("section_apropos").style.display = "none";
@@ -239,12 +199,4 @@ document.getElementById("hover_lane").addEventListener("click", function() {
     transitionEntree();
     setTimeout(boutonLane, 400);
     setTimeout(transitionSortie, 600);
-});
-
-document.getElementById("hover_lane_gif").addEventListener("mouseover", function() {
-    hoverPortfolioGif("hover_lane_gif", "../images/portfolio/lane.gif");
-});
-
-document.getElementById("hover_lane_gif").addEventListener("mouseout", function() {
-    hoverPortfolioGif("hover_lane_gif", "../images/portfolio/lane.jpg");
 });

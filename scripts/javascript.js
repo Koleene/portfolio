@@ -111,7 +111,7 @@ document.getElementById("hover_jeudisoir_gif").addEventListener("mouseover", fun
 });
 
 document.getElementById("hover_jeudisoir_gif").addEventListener("mouseout", function() {
-    hoverPortfolioGif("hover_jeudisoir_gif", "../images/portfolio/jeudisoir1.jpg");
+    hoverPortfolioGif("hover_jeudisoir_gif", "../images/portfolio/jeudisoir.jpg");
 });
 
 function boutonFemmeGeante() {
